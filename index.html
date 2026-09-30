@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bajan Quizzes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Source+Sans+3:wght@400;700&display=swap">
+<style>
+:root{--bg:#EEF2F9;--surface:#fff;--ink:#0B1A3A;--muted:#55627F;--line:#D3DBEA;--blue:#00267F;--gold:#FFC726}
+@media (prefers-color-scheme:dark){:root{--bg:#08101F;--surface:#111B30;--ink:#EDF1FA;--muted:#9AA7C4;--line:#24324F;--blue:#8FAEFF}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,sans-serif;padding:0 16px}
+.wrap{max-width:560px;margin:0 auto;padding:40px 0;display:flex;flex-direction:column;gap:20px}
+.flag{display:flex;height:8px;border-radius:4px;overflow:hidden}.flag span{flex:1;background:var(--blue)}.flag span:nth-child(2){background:var(--gold)}
+h1{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:clamp(36px,9vw,56px);line-height:1;margin:0}
+p{color:var(--muted);margin:0}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:20px}
+a.card:hover,a.card:focus-visible{border-color:var(--blue);outline:none}
+a.card b{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-size:24px;color:var(--blue);display:block}
+</style></head><body><div class="wrap">
+<div class="flag"><span></span><span></span><span></span></div>
+<h1>Bajan Quizzes</h1><p>Pick a quiz an' test wuh yuh know.</p>
+<a class='card' href='/test-yuh-brain'><b>Test Yuh Brain</b><p>Quick-fire: three rounds of 5 questions (15 total).</p></a>
+<a class='card' href='/bajan-sayings-quiz'><b>Bajan Sayings Quiz</b><p>The full quiz: sayings, endings and Bajan songs.</p></a>
+</div></body></html>
