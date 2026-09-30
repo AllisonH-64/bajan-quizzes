@@ -1,37 +1,19 @@
-# Bajan Quizzes
+# Quiz Sites
 
-Two shareable quizzes on Bajan sayings and songs, plus a home page linking them.
+Two quiz websites, each in its own folder and each hosted as its own Netlify site.
 
-🔗 Live site: [bajan-sayings.netlify.app](https://bajan-sayings.netlify.app)
+| Folder | Site | Live link |
+|---|---|---|
+| [`bajan-sayings/`](bajan-sayings/) | **Bajan Quizzes**: the Bajan Sayings Quiz and Test Yuh Brain | [bajan-sayings.netlify.app](https://bajan-sayings.netlify.app) |
+| [`barbados-quiz/`](barbados-quiz/) | **Barbados 60 & 5**: the toddler and ages 7–11 quizzes, plus printable packs | [barbados-quiz.netlify.app](https://barbados-quiz.netlify.app) |
 
-| File | Page |
-|---|---|
-| `index.html` | **Bajan Quizzes**: home page with links to both quizzes |
-| `bajan-sayings-quiz.html` | **Bajan Sayings Quiz**: the full quiz, in three rounds (what the saying means, finish the saying, Bajan songs) |
-| `test-yuh-brain.html` | **Test Yuh Brain**: quick-fire version, 5 random questions per round (15 in total) |
+See the README in each folder for what's in the site and how to deploy it.
 
-Each page is a single self-contained HTML file with no build step. The only outside resource is Google Fonts.
+## Linking Netlify to this repo
 
-## Editing the questions
+Link each Netlify site to this same repo, and give each one its own **Base directory**:
 
-The questions are near the bottom of each quiz file, in the `<script>` section:
+- **bajan-sayings** site → Base directory `bajan-sayings`
+- **barbados-quiz** site → Base directory `barbados-quiz`
 
-- **Round 1 (sayings and meanings):** `["Saying.", "What it means.", ["wrong answer", "wrong answer", "wrong answer"]]`
-- **Round 2 (finish the saying):** `["Start of the saying", "correct ending.", ["wrong ending", ...], "What it means."]`
-- **Round 3 (Bajan songs):** `["Question", "Right answer", ["wrong", ...], "Note shown after answering"]`
-
-The two quizzes keep separate copies of the questions, so make the same change in both files.
-
-## Deploying
-
-The site is hosted on Netlify by drag and drop:
-
-1. Zip the three `.html` files, keeping them at the top level of the zip.
-2. In Netlify, open the **bajan-sayings** site and go to **Deploys**.
-3. Drag the zip into the drag-and-drop box.
-
-The home page links to `test-yuh-brain.html` and `bajan-sayings-quiz.html`, so it also works when opened straight from your computer. On the live site Netlify shows these pages as `/test-yuh-brain` and `/bajan-sayings-quiz`.
-
-## History
-
-- **2026-09-30:** replaced "Who doan hear does feel." with "Har ears ya wont hear, own way ya gine feel." in both quizzes. The meaning is unchanged.
+Leave the build command and publish directory empty for both. Each site then publishes only its own folder.
