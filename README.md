@@ -30,7 +30,7 @@ The site is hosted on Netlify by drag and drop:
 2. In Netlify, open the **bajan-sayings** site and go to **Deploys**.
 3. Drag the zip into the drag-and-drop box.
 
-Netlify serves `test-yuh-brain.html` at `/test-yuh-brain` and `bajan-sayings-quiz.html` at `/bajan-sayings-quiz`, which is how the home page links to them.
+The home page links to `test-yuh-brain.html` and `bajan-sayings-quiz.html`, so it also works when opened straight from your computer. On the live site Netlify shows these pages as `/test-yuh-brain` and `/bajan-sayings-quiz`.
 
 ## History
 
